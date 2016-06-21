@@ -13,15 +13,30 @@
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         
         <style>
-            
+            .myNavbarClass{
+                height: 76px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .icon-bar{
+                background-color: black
+            }
+            .logo{
+                display: block;
+                float: left;
+                height: 50px;
+                width: 180px;
+                padding-left: 15px;
+                text-align: center;
+            }
         </style>
     </head>
     
     <body>
-            <nav class="navbar navbar-default" style="height: 76px;padding-top: 10px;padding-bottom: 10px" role="navigation">
+            <nav class="navbar navbar-static-top myNavbarClass" role="navigation">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a href="#" style="height: 50px;width: 180px;padding-left: 15"><img src="images/reap-logo.png" style="width: 107px;height: 32px"></a>
+                        <a href="#" class="logo"><img src="images/reap-logo.png" style="margin-top: 9px; width: 107px;height: 32px";></a>
                         <img class="hidden-xs hidden-sm" style="margin-top: 7px" src="images/reap.png">
                         
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -30,16 +45,15 @@
                             <span class="icon-bar"></span>
                         </button>
                     </div>
-                    
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><button class="btn active"><img src="images/ico-dashboard-black.png"> Dashboard</button></a></li>
-                        <li><a href="#"><button class="btn"><img src="images/ico-badge-black.png"> Badges</button></a></li>
-                        <li><a href="#"><button class="btn"><img src="images/ico-idea-black.png"> Idea</button></a></li>
-                        <li><a href="#"><button class="btn"><img src="images/ico-bell.png"></button></a></li>
-                    </ul>
-                </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><button class="btn active"><img src="images/ico-dashboard-black.png"> Dashboard</button></a></li>
+                            <li><a href="#"><button class="btn"><img src="images/ico-badge-black.png"> Badges</button></a></li>
+                            <li><a href="#"><button class="btn"><img src="images/ico-idea-black.png"> Idea</button></a></li>
+                            <li><a href="#"><button class="btn"><img src="images/ico-bell.png"></button></a></li>
+                        </ul>
+                    </div>
+                </div>                
             </nav>
     </body>
 </html>
